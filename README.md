@@ -2,6 +2,26 @@
 
 Flutter Mapp Clean Architecture Project
 
-## Getting Started
+Api Used: https://pokeapi.co/
 
-Navigate to -> Lib/core/template/info_feature.txt
+### Future 
+- Presentation: UI & UX
+    - Pages
+    - Provider (State management)
+    - Widgets
+
+- Business: Security, caches, logs, exeptions, validations
+    - entities
+    - repositories
+    - usecases
+
+- Data: Internal & external data, Api
+    - datasources
+    - models
+    - repositories
+
+### Flow
+1. Provider (Add required params)
+2. Pages (Widgets)
+3. Datasources remote
+4. Provider uses
