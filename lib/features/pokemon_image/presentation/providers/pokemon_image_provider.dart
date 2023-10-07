@@ -45,7 +45,8 @@ class PokemonImageProvider extends ChangeNotifier {
 
     final failureOrPokemonImage =
         await GetPokemonImage(pokemonImageRepository: repository).call(
-      pokemonImageParams: PokemonImageParams(),
+      pokemonImageParams:
+          PokemonImageParams(name: pokemonEntity.name, imageUrl: imageUrl),
     );
 
     failureOrPokemonImage.fold(

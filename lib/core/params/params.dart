@@ -11,7 +11,9 @@ class PokemonParams {
 
 class PokemonImageParams {
   final String name;
-  const PokemonParams({
-    required this.id,
+  final String imageUrl;
+  const PokemonImageParams({
+    required this.name,
+    required this.imageUrl,
   });
 }
